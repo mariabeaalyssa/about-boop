@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Boop | About</title>
+  <title>Agency - Start Bootstrap Theme</title>
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" type = "text/css" href="{{ url_for('static' , filename='vendor/bootstrap/css/bootstrap.min.css') }}">
@@ -142,6 +142,9 @@
       </div>
     </div>
   </div>
+   <!-- <marquee behavior="scroll" direction="up">
+                <h2 class="section-heading text-uppercase"Our Amazing Team width="500" height="500" alt="smile"></h2>
+                </marquee>-->
 </section>
 
   <!-- Services -->
@@ -150,7 +153,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Services</h2>
-          <h4 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h4>
+          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
         </div>
       </div>
       <div class="row text-center">
@@ -185,20 +188,20 @@
 
 
   <!-- Team -->
-  <section class="bg-light page-section" id="team">
+  <header class="bg-light page-section" id="team">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+          <h2 class="section-heading text-uppercase">The Team</h2>
           <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
         </div>
       </div>
       <div class="row">
         <div class="col-sm-4">
           <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-            <h4>Kay Garland</h4>
-            <p class="text-muted">Lead Designer</p>
+            <img class="mx-auto rounded-circle" src="{{ url_for('static', filename='img/team/chad.jpg') }}">
+            <h4>Francis Mascarinas</h4>
+            <p class="text-muted">Lead Developer/Designer</p>
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
                 <a href="#">
@@ -220,9 +223,9 @@
         </div>
         <div class="col-sm-4">
           <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
-            <h4>Larry Parker</h4>
-            <p class="text-muted">Lead Marketer</p>
+            <img class="mx-auto rounded-circle" src="{{ url_for('static', filename='img/team/glen.jpg') }}" alt="">
+            <h4>Glen Escuadra</h4>
+            <p class="text-muted">Developer</p>
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
                 <a href="#">
@@ -244,9 +247,9 @@
         </div>
         <div class="col-sm-4">
           <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
-            <h4>Diana Pertersen</h4>
-            <p class="text-muted">Lead Developer</p>
+            <img class="mx-auto rounded-circle" src="{{ url_for('static', filename='img/team/terrence.jpg') }}" alt="">
+            <h4>Terrence Cimafranca</h4>
+            <p class="text-muted">Developer</p>
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
                 <a href="#">
